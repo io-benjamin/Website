@@ -1,25 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 
+
 :root{
 
-    --mainTextColor-light:#000;
-    --secondaryTextColor-light:rgb(51 51 51);
-    --mainLinkColor-light:#0da2b8;
-    --mainBorderColor-light:rgb(218, 218, 218);
-    --mainBgColor-light:rgb(249, 250,251);
+  /* --mainTextColor-light:#000; */
+  --secondaryTextColor-light:rgb(51 51 51);
+  --mainLinkColor-light:#0da2b8;
+  /* --mainBorderColor-light:rgb(218, 218, 218); */
+  /* --mainBgColor-light:rgb(249, 250,251); */
 
-    --mainTextColor-dark:#fff;
-    --secondaryTextColor-dark:#adb0b1;
-    --mainLinkColor-dark:rgb(30, 190,214);
-    --mainBorderColor-dark:#2b3031;
-    --mainBgColor-dark:#131415;
-    
-    --mainTextColor:var(--mainTextColor-dark);
-    --secondaryTextColor:var(--secondaryTextColor-dark);
-    --mainLinkColor:var(--mainLinkColor-dark);
-    --mainBorderColor:var(--mainBorderColor-dark);
-    --mainBgColor:var(--mainBgColor-dark);
+  /* --mainTextColor-dark:#fff; */
+  --secondaryTextColor-dark:#adb0b1;
+  --mainLinkColor-dark:rgb(30, 190,214);
+  /* --mainBorderColor-dark:#2b3031; */
+  /* --mainBgColor-dark:#131415; */
+  
+  /* --mainTextColor:var(--mainTextColor-dark); */
+  --secondaryTextColor:var(--secondaryTextColor-dark);
+  --mainLinkColor:var(--mainLinkColor-dark);
+  /* --mainBorderColor:var(--mainBorderColor-dark); */
+  /* --mainBgColor:var(--mainBgColor-dark); */
 }
+
+
+#home h1 {
+  animation: bounce 3s infinite, fade 3s infinite; /* Example of combining bounce and fade animations */
+}
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.5s ease;
+}
+#home h1{
+  font-size: 34px;
+  color: #333;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in {
+  animation: fadeIn 4s;
+  animation-fill-mode: both;
+}
+
+.fade-out {
+  animation: fadeOut 4s;
+  animation-fill-mode: both;
+}
+
+#about h2{
+  font-size: 34px;
+  color: #333;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#about h2 {
+  animation: hinge 3s infinite, fade 3s infinite; /* Example of combining bounce and fade animations */
+}
+
+
+#portfolio h2{
+  font-size: 34px;
+  color: #333;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#spacer {
+    height: 500px; 
+}
+#spacer1{
+    height: 100px;
+}
+
+#socials--list{
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+
+#socials--list a{
+  font-weight: 500;
+  color: var(--secondaryTextColor);
+  font-size: 1.3em;
+  transition: 0.3s;
+}
+
+#socials--list a:hover{
+  font-weight: 500;
+  color: var(--mainLinkColor);
+  font-size: 1.3em;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    color: #000000;
+    z-index: 100;
+    padding: 10px 0;
+  }
+
+  nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  nav ul.menu li {
+    display: inline-block;
+    margin-right: 20px; 
+  }
+  
+  nav ul.menu li:last-child {
+    margin-right: 0; 
+  }
+  
+  nav ul.menu li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  nav ul.menu li a:hover {
+    text-decoration: underline;
+}
+  
 
 *{
   font-family: 'Readex Pro';
@@ -28,23 +142,9 @@
     color: var(--mainTextColor);
 }
 
-body{
-    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-}
-
-p, span, li{
-    color: var(--secondaryTextColor);
-    font-size: 1em;
-}
-
-a{
-    text-decoration: none;
-    color: var(--mainLinkColor);
-    font-weight: 500;
-}
-
-li{
-    line-height: 1.9em;
+#img{
+    width: 10px;
+    height: 10px;
 }
 
 #container--main{
@@ -52,32 +152,8 @@ li{
     margin: 0 auto;
 }
 
-#section--page{
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-#wrapper--hero{
-    display: flex;
-    align-items: center;
-    gap: 4em;
-}
-
 #bio, a{
     font-weight: 300;
-}
-
-#Username{
-    color: var(--mainTextColor);
-    font-size: 48px;
-    line-height: 1em;
-}
-
-#profile-pic{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
 }
 
 #email a{
@@ -93,90 +169,77 @@ li{
     font-size: 1em;
 }
 
-#Socials--list{
-    display: flex;
-    justify-content: space-evenly;
-    column-gap: 1em;
-    flex-wrap: wrap;
+/* Add this CSS to your main.css or a separate CSS file */
+#contact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4; /* Choose a background color */
+    padding: 20px; /* Adjust the padding as needed */
+    border-top: 1px solid #ddd; /* Add a border for separation */
+    text-align: center; /* Center the content horizontally */
+    z-index: 1000; /* Set a high z-index to ensure it stays on top of other content */
+    transition: opacity 0.3s; /* Add a transition for smooth appearance */
 }
 
-#Socials--list a{
-    font-weight: 500;
-    color: var(--secondaryTextColor);
-    font-size: 1.3em;
-    transition: 0.3s;
+.content-container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
-#Socials--list a:hover{
-    font-weight: 500;
-    color: var(--mainLinkColor);
-    font-size: 1.3em;
+/* Style for the 'x' button */
+#close-contact {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  padding: 10px;
 }
 
-#Skills--list{
-    list-style: none;
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust this for spacing between projects */
 }
 
-.card--project-history{
-    border-left: 1px solid var(--mainBorderColor);
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-left: 2em;
+.project {
+  flex: 1;
+  background-color: #f7f7f7; /* Add a background color if needed */
+  border: 1px solid #ddd; /* Add borders if needed */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+  min-width: 200px; /* Set a minimum width */
 }
 
-.card--work-history{
-    border-left: 1px solid var(--mainBorderColor);
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-left: 2em;
+.project h3 {
+  font-size: 18px;
+  margin: 0;
 }
 
-.card--indepedent-projects{
-    border-left: 1px solid var(--mainBorderColor);
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-left: 2em;
+.project p {
+  font-size: 14px;
+  margin: 0;
 }
 
-.line-break{
-    background-color: var(--mainBorderColor);
-    height: 1px;
+.project a {
+  display: block;
+  margin-top: auto; /* Vertically align at the bottom */
+  text-decoration: none;
+  color: #007BFF; /* Link color */
+  height: 30px; /* Set a consistent height */
+  line-height: 30px; /* Center text vertically */
 }
 
-.card--clubs{
-    font-size: 0.9em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-top: 1px solid var(--mainBorderColor);
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 1;
 }
 
-@media(max-width:600px){
-    #wrapper--hero{
-        flex-direction: column;
-        gap: 1em;
-    }
-    #profile-pic{
-        width: 200px;
-        height: 200px;
-    }
-    .section--page{
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-    .card--project-history{
-        border-left: none;
-        padding-left: 0;
-    }
-    .card--work-history{
-        border-left: none;
-        padding-left: 0;
-    }
-    .card--indepedent-projects{
-        border-left: none;
-        padding-left: 0;
-    }
-    .card--clubs{
-        border-left: none;
-        padding-left: 0;
-    }
-}
+
