@@ -2,14 +2,11 @@
 <html>
 
 <head>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Benjamin Estrada</title>
-    <meta name="viewport" content="width=device-width, intital-scale=1">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <script src="scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -17,94 +14,100 @@
 
 <body>
 
-<header>
-    <nav>
-        <a href="#home">
-            <img src="path-to-your-logo.png" alt="estradab">
-        </a>
-        <ul class="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a id="contact-button" href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <a href="#home">
+                <img src="path-to-your-logo.png" alt="estradab">
+            </a>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a id="contact-button" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div id="container--main">
-    
-    <section id="home">
-        <div id="intro-container">
-            <h1 id="home"class="animate__animated animate__bounce">Hello, My name is Benjamin Estrada 👋</h1>
-            <p id="intro"></p>
-        </div>
-    </section>
+    <canvas id="generative-art"></canvas>
+    <script src="generative-art.js"></script>
 
-    <section id="about">
-        <h2 id="about" class="animate__animated animate__hinge">About Benjamin Estrada</h2>
-        <p id="bio">Hello, My name is Benjamin Estrada, I am a Mexican-American 🇲🇽🇺🇸 from Virginia. I am a
-            Senior at Virginia Commonwealth University (VCU) majoring in Computer Science with a minor in
-            Mathematics. Currently, I'm searching for full-time positions in Full Stack development or Cloud Engineering 👨🏾‍💻</p>
-    </section>
+    <div id="container--main">
+        <section id="home">
+            <div id="intro-container">
+                <h1 id="home" class="animate__animated animate__bounce">Hello, My name is Benjamin Estrada 👋</h1>
+                <p id="intro"></p>
+            </div>
+        </section>
 
-    <section id="spacer"></section>
+        <section id="about">
+            <h2 id="about" class="animate__animated animate__hinge">About Benjamin Estrada</h2>
+            <p id="bio">Hello, My name is Benjamin Estrada, I am a Mexican-American 🇲🇽🇺🇸 from Virginia. I am a
+                Senior at Virginia Commonwealth University (VCU) majoring in Computer Science with a minor in
+                Mathematics. Currently, I'm searching for full-time positions in Full Stack development or Cloud
+                Engineering 👨🏾‍💻</p>
+        </section>
 
-    <section id="portfolio">
-        <h2 id="portfolio">My Projects</h2>
-        <div class="project-container">
-            <div class="project">
-                <h3>Unveiling ESG Analyst</h3>
-                <p>Executed an AI model to extract ESG keywords.</p>
-                <a class="read-more" href="#">Read More</a>
-                <div class="modal">
-                    <div class="modal-content">
-                        <p>Executed an AI model using Python and GCP to extract ESG keywords  
-                            from diverse and unstructured data sources. Formulated an intuitive user interface using Python and Jupyter Notebook, amplifying the depth of sustainability 
-                            analysis, and streamlining more precise reporting for enhanced communication of our findings and insights.</p>
+        <section id="spacer"></section>
+
+        <section id="portfolio">
+            <h2 id="portfolio">My Projects</h2>
+            <div class="project-container">
+                <div class="project">
+                    <h3>Unveiling ESG Analytics</h3>
+                    <p>Executed an AI model to extract ESG keywords.</p>
+                    <a class="read-more" href="#">Read More</a>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <p>Executed an AI model using Python and GCP to extract ESG keywords
+                                from diverse and unstructured data sources. Formulated an intuitive user interface using
+                                Python and Jupyter Notebook, amplifying the depth of sustainability
+                                analysis, and streamlining more precise reporting for enhanced communication of our
+                                findings and insights.</p>
+                        </div>
+                        <a class="close-modal" href="#">Close</a>
                     </div>
-                    <a class="close-modal" href="#">Close</a>
+                </div>
+                <div class="project">
+                    <h3>AI Generated CICD Pipelines</h3>
+                    <p>Automated CICD Pipelines using AI.</p>
+                    <a class="read-more" href="#">Read More</a>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <p>This is more information about the project.</p>
+                        </div>
+                        <a class="close-modal" href="#">Close</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Online Portfolio Website</h3>
+                    <p>Developed a dynamic portfolio.</p>
+                    <a class="read-more" href="#">Read More</a>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <p>This is more information about the project.</p>
+                        </div>
+                        <a class="close-modal" href="#">Close</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-hidden">
+            <div class="content-container">
+                <span id="close-contact">x</span>
+                <h1>Contact</h1>
+                <p>Feel free to reach out to me via email or LinkedIn or check out my github & resume!
+                <div n=""></div> I'd appreciate any feedback.</p>
+                <p id="email">👉<a
+                        href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWstwMzvDTthlnhfxDNZRfqsNmtGDFsMjlQjTGlXtmSFDsGxbljGzQZSVdqLNhsLwQdpBfrmQ"
+                        target="_blank">benjaminnestrada@gmail.com</a> </p>
+                <div id="socials--list">
+                    <a href="https://www.linkedin.com/in/estradaben" target="_blank">LinkedIn</a>
+                    <a href="https://www.github.com/io-benjamin" target="_blank">GitHub</a>
+                    <a href="./Assets/Benjamin Estrada Resume 2023-2024.pdf" target="_blank">Download Resume</a>
                 </div>
             </div>
-            <div class="project">
-                <h3>AI Generated CICD Pipelines</h3>
-                <p>Automated CICD Pipelines using AI.</p>
-                <a class="read-more" href="#">Read More</a>
-                <div class="modal">
-                    <div class="modal-content">
-                        <p>This is more information about the project.</p>
-                    </div>
-                    <a class="close-modal" href="#">Close</a>
-                </div>
-            </div>
-            <div class="project">
-                <h3>Online Portfolio Website</h3>
-                <p>Developed a dynamic portfolio.</p>
-                <a class="read-more" href="#">Read More</a>
-                <div class="modal">
-                    <div class="modal-content">
-                        <p>This is more information about the project.</p>
-                    </div>
-                    <a class="close-modal" href="#">Close</a>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
-    <section id="contact" class="contact-hidden">
-        <div class="content-container">
-            <span id="close-contact">x</span>
-            <h1>Contact</h1>
-            <p>Feel free to reach out to me via email or LinkedIn or check out my github & resume! <div n=""></div> I'd appreciate any feedback.</p>
-            <p id="email">👉<a
-                    href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWstwMzvDTthlnhfxDNZRfqsNmtGDFsMjlQjTGlXtmSFDsGxbljGzQZSVdqLNhsLwQdpBfrmQ"
-                    target="_blank">benjaminnestrada@gmail.com</a> </p>
-            <div id="socials--list">
-                <a href="https://www.linkedin.com/in/estradaben" target="_blank">LinkedIn</a>
-                <a href="https://www.github.com/io-benjamin" target="_blank">GitHub</a>
-                <a href="./Assets/Benjamin Estrada Resume 2023-2024.pdf" target="_blank">Download Resume</a>
-            </div>
-        </div>
-    </section>
+        </section>
 </body>
 
 </html>
