@@ -64,14 +64,18 @@
   animation-fill-mode: both;
 }
 
-#about h2{
-  font-size: 34px;
-  color: #333;
-  line-height: 1.5;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+#about {
+  border: 2px solid #333; 
+  padding: 20px; 
 }
+
 #about h2 {
-  animation: hinge 3s infinite, fade 3s infinite; /* Example of combining bounce and fade animations */
+  font-size: 30px; 
+  margin-right: 0; 
+  text-align: center;
+  color: #333;
+  line-height: 1; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -142,6 +146,14 @@ header {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+  }
+
+  header nav a img {
+    width: 100px; /* Set the width of the image as needed */
+    height: auto; /* Maintain the aspect ratio */
+    position: absolute; /* Position the image absolutely within the header */
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
   }
 
   nav ul.menu li a:hover {
